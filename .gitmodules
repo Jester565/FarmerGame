@@ -1,0 +1,6 @@
+[submodule "AllegroExt"]
+	path = AllegroExt
+	url = https://github.com/Jester565/AllegroExt.git
+[submodule "Lighting4"]
+	path = Lighting4
+	url = https://github.com/Jester565/Lighting4.git

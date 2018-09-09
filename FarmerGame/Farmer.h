@@ -96,7 +96,7 @@ private:
 	float legAngle;
 	bool legDir;
 	bool movementDisabled;
-	//lighting::CircleLightSource* surroundLight;
+	lighting::CircleLightSource* surroundLight;
 	lighting::DirectionalLightSource* flashLight;
 };
 

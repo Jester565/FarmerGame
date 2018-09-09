@@ -73,7 +73,7 @@ Farmer::Farmer(World* world, float mX, float mY)
 	topArm->createMoveJoint(topForearm, 6.5 * PLAYER_SCALE, 19 * PLAYER_SCALE);
 	topForearm->createMoveJoint(gunImg, 4.5 * PLAYER_SCALE, 20 * PLAYER_SCALE);
 	torso->setXY(STANDARD_WIDTH / 2, STANDARD_HEIGHT / 2 + 12);
-	//surroundLight = new lighting::CircleLightSource(world->getLightLayer(), 100, 200, 200, 200);
+	surroundLight = new lighting::CircleLightSource(world->getLightLayer(), 100, 200, 200, 200);
 	flashLight = new lighting::DirectionalLightSource(world->getLightLayer(), 600, 40, 200, 200, 200);
 	grass1 = new AllegroExt::Sound::SoundEffect(AllegroExt::Core::GetSoundManager(), "grass1.wav", 1);
 	grass2 = new AllegroExt::Sound::SoundEffect(AllegroExt::Core::GetSoundManager(), "grass2.wav", 1);
@@ -87,7 +87,7 @@ void Farmer::draw()
 	{
 		stepSoundTimer -= AllegroExt::Core::rate;
 	}
-	//surroundLight->setXY(STANDARD_WIDTH / 2, STANDARD_HEIGHT / 2 - 40);
+	surroundLight->setXY(STANDARD_WIDTH / 2, STANDARD_HEIGHT / 2 - 40);
 	transX = physBody->getX() - lastX;
 	transY = physBody->getY() - lastY;
 	lastX = physBody->getX();
