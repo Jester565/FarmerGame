@@ -2,7 +2,7 @@
 FarmerGame is a small project written in three days and was built to show the versatility of AllegroExt and Lighting4. It features a short campaign against evil potatos (don't ask) and was an implementation of a [team project outline](https://github.com/Jester565/FarmerGame-JavaDocTest).
 ![Allegro Configuration](/rdme/farmergame.gif)
 
-## Installation
+## Building
 ***Clone repository with --recurse-submodules flag***  
 Requirements: Boost (1.68.0), Allegro (5.2.4), and Box2D (2.3.1)
 
@@ -35,4 +35,4 @@ Run make or build the solution
 Set FarmerGame as Startup Project after building on Visual Studio
 
 #### Troubleshooting
-* If using Visual Studio make all projects are using /MT runtime linking and Basic Runtime Checks is set to default.
+* If using Visual Studio, make sure all projects are using /MT runtime linking and Basic Runtime Checks is set to default.
