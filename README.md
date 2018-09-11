@@ -1,28 +1,28 @@
 # FarmerGame
 FarmerGame is a small project written in three days and was built to show the versatility of AllegroExt and Lighting4. It features a short campaign against evil potatos (don't ask) and was an implementation of a [team project outline](https://github.com/Jester565/FarmerGame-JavaDocTest).
-![Allegro Configuration](/rmde/farmergame.gif)
+![Allegro Configuration](/rdme/farmergame.gif)
 
 ## Installation
 Requirements: Boost (1.68.0), Allegro (5.2.4), and Box2D (2.3.1)
 
 #### Requirement Installation
 1. Installing Boost
-    i. Download at https://www.boost.org/
-    ii. In boost root directory, run ```./bootstrap```
-    iii. For default configuration compatibility run: ```./b2 --stagedir=./stage/VS2017/x64 address-model=64 --toolset=msvc-14.1 --with-thread variant=release link=static threading=multi runtime-link=static```
-    iv. Add the boost root directory to CMAKE_INCLUDE_PATH and the directory of your boost library files (should be in stage/lib) to CMAKE_LIBRARY_PATH.
+    1. Download at https://www.boost.org/  
+    2. In boost root directory, run ```./bootstrap```  
+    3. For default configuration compatibility run: ```./b2 --stagedir=./stage/VS2017/x64 address-model=64 --toolset=msvc-14.1 --with-thread variant=release link=static threading=multi runtime-link=static```  
+    4. Add the boost root directory to CMAKE_INCLUDE_PATH and the directory of your boost library files (should be in stage/lib) to CMAKE_LIBRARY_PATH.  
 2. Installing Box2D
-    i. Download from https://github.com/erincatto/Box2D
-    ii. Install [Premake5](https://premake.github.io/)
-    iii. Run ```premake5 vs2017 --StaticRuntime```
-    iv. Run visual studio solution or make
+    1. Download from https://github.com/erincatto/Box2D
+    2. Install [Premake5](https://premake.github.io/)
+    3. Run ```premake5 vs2017 --StaticRuntime```
+    4. Run visual studio solution or make
 3. Installing Allegro
     * Windows:
-        i. After you generate the FarmerGame solution, goto Tools -> NuGet Packet Manager -> Manage NuGet Packages for Solution... -> Browse
-        ii. Search for and install Allegro for AllegroExt, Lighting4, and FarmerGame
-        iii. Goto the properties for the Allegro projects and set the dependencies like this ![Allegro Configuration](/rmde/AllegConf.png)
+        1. After you generate the FarmerGame solution, goto Tools -> NuGet Packet Manager -> Manage NuGet Packages for Solution... -> Browse
+        2. Search for and install Allegro for AllegroExt, Lighting4, and FarmerGame
+        3. Goto the properties for the Allegro projects and set the dependencies like this ![Allegro Configuration](/rdme/AllegConf.png)
     * Ubuntu:
-        i. Install Allegro5 Package with [this guide](https://wiki.allegro.cc/index.php?title=Install_Allegro_from_Ubuntu_PPAs)
+        1. Install Allegro5 Package with [this guide](https://wiki.allegro.cc/index.php?title=Install_Allegro_from_Ubuntu_PPAs)
 
 #### Build
 ```
