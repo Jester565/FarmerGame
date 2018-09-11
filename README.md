@@ -3,7 +3,7 @@ FarmerGame is a small project written in three days and was built to show the ve
 ![Allegro Configuration](/rdme/farmergame.gif)
 
 ## Installation
-***Clone repository with --recurse-submodules flag***
+***Clone repository with --recurse-submodules flag***  
 Requirements: Boost (1.68.0), Allegro (5.2.4), and Box2D (2.3.1)
 
 #### Requirement Installation
